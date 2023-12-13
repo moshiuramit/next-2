@@ -27,9 +27,15 @@ const Users = async () => {
         <tbody>
           {users.map((user) => (
             <tr>
-              <td className="p-2 border">{user.name}</td>
-              <td className="p-2 border">{user.email}</td>
-              <td className="p-2 border">{user.username}</td>
+              <td key={user.id} className="p-2 border">
+                {user.name}
+              </td>
+              <td key={user.id} className="p-2 border">
+                {user.email}
+              </td>
+              <td key={user.id} className="p-2 border">
+                {user.username}
+              </td>
             </tr>
           ))}
         </tbody>
