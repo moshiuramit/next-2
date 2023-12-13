@@ -16,7 +16,7 @@ const Users = async () => {
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
-      <table className="ts acc ach">
+      {/* <table className="ts acc ach">
         <thead>
           <tr>
             <th className="p-2 border bg-orange-300">Name</th>
@@ -39,7 +39,7 @@ const Users = async () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </>
   );
 };
