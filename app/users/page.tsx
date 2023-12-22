@@ -10,15 +10,16 @@ const Users = async () => {
   const users: User[] = await res.json();
   return (
     <>
-      <h1>Users</h1>
-      <ul>
+      <h2 className="text-violet-950 text-2xl font-bold">User List</h2>
+      {/* <ul>
         {users.map((user) => (
           <li key={user.id}>{user.name}</li>
         ))}
-      </ul>
-      {/* <table className="ts acc ach">
+      </ul> */}
+      { <table className="ts acc ach">
         <thead>
           <tr>
+            <th className="p-2 border bg-orange-300">id</th>
             <th className="p-2 border bg-orange-300">Name</th>
             <th className="p-2 border bg-orange-200">Email</th>
             <th className="p-2 border bg-orange-100">Username</th>
@@ -26,20 +27,23 @@ const Users = async () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr>
-              <td key={user.id} className="p-2 border">
+            <tr key={user.id}>
+              <td  className="p-2 border">
+                {user.id}
+              </td>
+              <td  className="p-2 border">
                 {user.name}
               </td>
-              <td key={user.id} className="p-2 border">
+              <td  className="p-2 border">
                 {user.email}
               </td>
-              <td key={user.id} className="p-2 border">
+              <td className="p-2 border">
                 {user.username}
               </td>
             </tr>
           ))}
         </tbody>
-      </table> */}
+      </table>}
     </>
   );
 };
