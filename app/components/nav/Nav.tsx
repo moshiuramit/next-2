@@ -3,8 +3,8 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <>
-      <header className="bg-orange-200 flex items-center gap-x-6 max-w-7xl w-full justify-center">
-        <nav className="flex text-center" aria-label="Global">
+      <header className="bg-orange-200 flex items-center gap-x-6 max-w-7xl w-full justify-center custom-container">
+        <nav className="flex text-center nav" aria-label="Global">
             <Link href="./" className="p-3 border-r-2 text-center">
               Home
             </Link>

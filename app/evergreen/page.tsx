@@ -3,9 +3,9 @@ import { Button, CaretDownIcon, CogIcon, EditIcon, IconButton, ManualIcon, Pane,
 
 const Evergreen = () => {
   return (
-    <div className="container m-auto"> 
-      <div className="text-3xl text-center p-5 m-5"> Test Creative Manager</div>   
-        <div className="flex justify-between secondary-nav">
+    <div className="custom-container"> 
+      <h2 className=""> Test Creative Manager</h2>   
+        <div className="secondary-nav">
           <div className="left-side">
             <div> 
               <span>Campaigns</span> 
